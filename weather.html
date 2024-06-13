@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <script src="https://rajvi-1305.github.io/PRODIGY_WD_01/include.js" defer></script>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body onload="includeHTML()">
+    <div include-html="https://rajvi-1305.github.io/PRODIGY_WD_01/header.html"></div>
+    <!-- <div include-html="header.html"></div> -->
+    <div class="bg">
+        <div class="container">
+            <h1>Weather App</h1>
+            <div id="location">
+                <label for="location">Enter Location: </label>
+                <input type="text" id="input" required>
+                <button onclick="getWeather()" type="submit">Search</button>
+            </div>
+            <img id="icon" alt="Weather Icon"/>
+            <div id="temp"></div>
+            <div id="weather"></div>
+            <div id="forecast"></div>
+        </div>
+    </div>
+    <div include-html="https://rajvi-1305.github.io/PRODIGY_WD_01/footer.html"></div>
+    <!-- <div include-html="footer.html"></div> -->
+    <script src="weather.js"></script>
+</body>
+</html>
